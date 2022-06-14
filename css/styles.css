@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #add8e6;
+  margin: 0;
+}
+
+header {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 25vh;
+  padding: max(16px, 2vw);
+  text-align: center;
+}
+
+header > * {
+  margin: 0;
+}
+
+main {
+  padding: 0 max(4vw, 32px) max(4vw, 32px);
+}
+
+#survey-form {
+  background-color: #fff;
+  border: 2px solid #000;
+  box-shadow: 5px 5px 0 #000;
+  padding: max(1vw, 8px);
+}
+
+label {
+  display: block;
+}
+
+form > p {
+  margin-bottom: 0.5em;
+}

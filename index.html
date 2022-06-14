@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>freeCodeCamp Survey Form</title>
+    <link rel="stylesheet" href="./css/styles.css">
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Survey Form Page</h1>
+      <p id="description">This is my second of five final projects for
+        freeCodeCamp's Responsive Web Design course</p>
+    </header>
+    <main>
+      <form action="" id="survey-form">
+        <label for="name" id="name-label">What is your name? <input type="text"
+              id="name" name="name" placeholder="Enter your name"
+              required></label>
+        <label for="email" id="email-label">What is your email address? <input
+              type="email" id="email" name="email"
+              placeholder="Enter email address" required></label>
+        <label for="number" id="number-label">On a scale of 1–10, how would you
+          rate this webpage? (optional) <input type="number" id="number"
+              name="webpage-rating" placeholder="1–10" min="1" max="10"></label>
+        <p>How did you find this webpage?</p>
+        <select name="how-user-found-this-page" id="dropdown" required>
+          <option value="" selected disabled>Select an option</option>
+          <option value="codepen">My Codepen profile</option>
+          <option value="freecodecamp">My freeCodeCamp profile</option>
+          <option value="linkedin">My LinkedIn profile</option>
+          <option value="other">Other</option>
+        </select>
+        <p>Have you viewed any of my other projects for freeCodeCamp's
+          Responsive Web Design course?</p>
+        <label for="viewed"><input type="radio" id="viewed"
+              name="has-viewed-other-projects" value="yes" required> Yes</label>
+        <label for="not-viewed"><input type="radio" id="not-viewed"
+              name="has-viewed-other-projects" value="no"> No</label>
+        <p>If you selected "Yes" on the previous question, which projects have
+          you viewed?</p>
+        <label for="tribute-page"><input type="checkbox" id="tribute-page"
+              name="viewed-projects" value="tribute-page"> Ada Lovelace Tribute
+          Page</label>
+        <label for="product-landing-page"><input type="checkbox"
+              id="product-landing-page" name="viewed-projects"
+              value="product-landing-page"> Product Landing Page</label>
+        <label for="technical-doc-page"><input type="checkbox"
+              id="technical-doc-page" name="viewed-projects"
+              value="technical-documentation-page"> Technical Documentation
+          Page</label>
+        <label for="portfolio-page"><input type="checkbox" id="portfolio-page"
+              name="viewed-projects" value="personal-portfolio-page"> Personal
+          Portfolio Page</label>
+        <label for="none"><input type="checkbox" id="none"
+              name="viewed-projects" value="none"> I haven't viewed any of the
+          other projects</label>
+        <label for="comments">Do you have any additional comments?<br><textarea
+              name="comments" id="comments" cols="80"
+              rows="10"></textarea></label>
+        <input type="submit" id="submit" value="Submit" disabled>
+        <p><em>Disclaimer: The submit button doesn't (and is <b>not</b>) meant
+            to work.</em></p>
+      </form>
+    </main>
+    <script
+        src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
