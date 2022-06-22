@@ -11,5 +11,5 @@ for (const label of surveyLabels) {
    */
   const inputType = document.getElementById(label.getAttribute('for')).type;
   label.style.margin =
-      ['radio', 'checkbox'].includes(inputType) ? '0.5em 0' : '1em 0';
+      ['radio', 'checkbox'].includes(inputType) ? '.5em 0' : '1em 0';
 }
