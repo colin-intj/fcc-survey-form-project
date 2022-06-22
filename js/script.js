@@ -10,9 +10,9 @@ for (const label of surveyLabels) {
    * doesn't have a constant case name.
    */
   const inputType = document.getElementById(label.getAttribute('for')).type;
-  if (!(['radio', 'checkbox'].includes(inputType))) {
-    label.style.margin = '1em 0';
-  } else {
+  if (['radio', 'checkbox'].includes(inputType)) {
     label.style.margin = '0.5em 0';
+  } else {
+    label.style.margin = '1em 0';
   }
 }
